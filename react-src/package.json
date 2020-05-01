@@ -1,23 +1,27 @@
 {
-    "name": "celestial",
-    "version": "1.1.0",
-    "private": true,
-    "dependencies": {
-        "@devloco/react-scripts-wptheme": "3.1.200",
-        "react": "^16.4.1",
-        "react-dom": "^16.4.1",
-        "react-router-dom": "^4.2.2"
-    },
-    "scripts": {
-        "crabuild": "react-scripts build",
-        "craeject": "react-scripts eject",
-        "crastart": "react-scripts start",
-        "cratest": "react-scripts test --env=jsdom",
-        "build": "wptheme-scripts build",
-        "start": "wptheme-scripts start",
-        "wpbuild": "wptheme-scripts wpbuild",
-        "wpstart": "wptheme-scripts wpstart"
-    },
-    "homepage": "/wordpress/wp-content/themes/celestial",
-    "browserLaunchTo": "http://localhost/wordpress"
+  "name": "celestial",
+  "version": "1.1.0",
+  "private": true,
+  "dependencies": {
+    "@devloco/react-scripts-wptheme": "3.1.200",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.2.2",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "crabuild": "react-scripts build",
+    "craeject": "react-scripts eject",
+    "crastart": "react-scripts start",
+    "cratest": "react-scripts test --env=jsdom",
+    "build": "wptheme-scripts build",
+    "start": "wptheme-scripts start",
+    "wpbuild": "wptheme-scripts wpbuild",
+    "wpstart": "wptheme-scripts wpstart",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "homepage": "/wordpress/wp-content/themes/celestial",
+  "browserLaunchTo": "http://localhost/wordpress",
+  "snyk": true
 }
